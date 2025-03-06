@@ -1,4 +1,6 @@
-# Pap2Pat: Towards Automated Paper-to-Patent Drafting using Chunk-based Outline-guided Generation
+# Pap2Pat: Benchmarking Outline-Guided Long-Text Patent Generation with Patent-Paper Pairs
+
+[![arXiv](https://img.shields.io/badge/arXiv-2410.07009-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2410.07009)
 
 > [!NOTE]
 > Currently, this repository contains only the Pap2Pat dataset. All code for the dataset creation, outline-guided generation and evaluation will be added later.
@@ -6,13 +8,7 @@
 
 ## Abstract
 
-> The patent domain is gaining attention in natural language processing research, offering practical applications in streamlining the patenting process and providing challenging benchmarks for large language models (LLMs). However, the generation of the description sections of patents, which constitute more than 90% of the patent document, has not been studied to date.
->
-> We address this gap by introducing the task of outline-guided paper-to-patent generation, where an academic paper provides the technical specification of the invention and an outline conveys the desired patent structure.
-We present Pap2Pat, a new challenging benchmark of 1.8k patent-paper pairs with document outlines, collected using heuristics that reflect typical research lab practices.
->
-> Our experiments with current open-weight LLMs and outline-guided chunk-based
-generation show that they can effectively use information from the paper but struggle with repetitions, likely due to the inherent repetitiveness of patent language. We release our data and code.
+> Dealing with long and highly complex technical text is a challenge for Large Language Models (LLMs), which still have to unfold their potential in supporting expensive and timeintensive processes like patent drafting. Within patents, the description constitutes more than 90% of the document on average. Yet, its automatic generation remains understudied. When drafting patent applications, patent attorneys typically receive invention reports (IRs), which are usually confidential, hindering research on LLM-supported patent drafting. Often, prepublication research papers serve as IRs. We leverage this duality to build PAP2PAT, an open and realistic benchmark for patent drafting consisting of 1.8k patent-paper pairs describing the same inventions. To address the complex longdocument patent generation task, we propose chunk-based outline-guided generation using the research paper as invention specification. Our extensive evaluation using PAP2PAT and a human case study show that LLMs can effectively leverage information from the paper, but still struggle to provide the necessary level of detail. Fine-tuning leads to more patent-style language, but also to more hallucination. We release our data and code.
 
 
 
