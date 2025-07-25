@@ -1,0 +1,41 @@
+# Model arguments
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+model_revision: main
+torch_dtype: bfloat16
+attn_implementation: flash_attention_2
+
+load_in_4bit: false
+load_in_8bit: false
+lora_alpha: 60
+lora_dropout: 0.05
+lora_r: 128
+lora_target_modules: null
+use_peft: true
+
+# SFT trainer config
+learning_rate: 0.00031622776601683794
+warmup_ratio: 0.1
+num_train_epochs: 3
+max_seq_length: 8192
+per_device_eval_batch_size: 4
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 16
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+
+save_strategy: "no"
+
+bf16: true
+output_dir: outputs/training_runs/Meta-Llama-3-8B-Instruct
+do_eval: true
+eval_strategy: steps
+eval_steps: 100
+log_level: info
+logging_steps: 1
+logging_strategy: steps
+lr_scheduler_type: cosine
+max_steps: -1
+overwrite_output_dir: true
+remove_unused_columns: true
+seed: 42

@@ -3,9 +3,6 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2410.07009-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2410.07009)
 [![hf](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper%20page-ffc107?color=ffc107&logoColor=white&style=for-the-badge)](https://huggingface.co/papers/2410.07009)
 
-> [!NOTE]
-> Currently, this repository contains only the Pap2Pat dataset. All code for the dataset creation, outline-guided generation and evaluation will be added later.
-
 
 ## Abstract
 

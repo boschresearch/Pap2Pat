@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "outline-guided-generation"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10.9,<4.0"
+rich = "^13.7.1"
+pap2pat = {path = "../Pap2Pat", develop = true}
+ipykernel = "^6.29.5"
+altair = "^5.4.1"
+vega-datasets = "^0.9.0"
+sglang = {version = "0.3.6.post3", extras = ["srt"]}
+bm25s = "^0.2.0"
+flashinfer = {url = "https://github.com/flashinfer-ai/flashinfer/releases/download/v0.1.6/flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl"}
+azure-identity = "^1.18.0"
+alignment-handbook = {git = "https://github.com/huggingface/alignment-handbook", rev = "7d711cd"}
+trl = "^0.11.0"
+flash-attn = {url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.6.3/flash_attn-2.6.3+cu123torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl"}
+nltk = "^3.9.1"
+stylo-metrix = "^0.1.9.1"
+spacy = {version = "3.7.2", extras = ["cuda126"]}
+cupy-cuda12x = "^13.3.0"
+lftk = "^1.0.9"
+orjson = "^3.10.12"
+decord = "^0.6.0"
+python-multipart = "^0.0.20"
+torchao = "^0.8.0"
+cdifflib = "^1.2.9"
+
+
+[tool.poetry.group.dev.dependencies]
+debugpy = "^1.8.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

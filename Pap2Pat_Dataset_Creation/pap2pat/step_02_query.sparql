@@ -1,0 +1,91 @@
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX soa: <https://semopenalex.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX datacite: <http://purl.org/spar/datacite/>
+
+
+SELECT DISTINCT
+	?paper ?authors ?author_names ?author_overlap ?title ?abstract ?date ?doi
+	(GROUP_CONCAT(?location; SEPARATOR="\n") as ?locations)
+	(GROUP_CONCAT(?url; SEPARATOR="\n") as ?urls)
+	(GROUP_CONCAT(?pdf_url; SEPARATOR="\n") as ?pdf_urls)
+	(GROUP_CONCAT(?license; SEPARATOR="\n") as ?licenses)
+
+WHERE {
+
+    SELECT DISTINCT
+        ?paper
+        (GROUP_CONCAT(DISTINCT ?author; SEPARATOR="\n") as ?authors)
+        (GROUP_CONCAT(DISTINCT ?author_name; SEPARATOR="\n") as ?author_names)
+        (SAMPLE(?author_overlap) as ?author_overlap)
+        (SAMPLE(?title) as ?title)
+        (SAMPLE(?abstract) as ?abstract)
+        (SAMPLE(?date) as ?date)
+        (SAMPLE(?doi) as ?doi)
+        ?location
+        ?url
+        ?pdf_url
+        ?license
+
+
+    WHERE {
+
+        # Information required for Matching
+        ?paper a soa:Work ;
+            dct:creator ?author ;
+            dct:title ?title ;
+            dct:abstract ?abstract ;
+            dct:date ?date ;
+            datacite:doi ?doi .
+
+        ?author foaf:name ?author_name .
+
+        # Optional Information for Downloading
+        OPTIONAL {
+            ?paper soa:hasLocation ?location .
+            OPTIONAL { ?location fabio:hasURL ?url_ . }
+            OPTIONAL { ?location soa:pdfUrl ?pdf_url_ . }
+            OPTIONAL { ?location dct:license ?license_ . }
+            BIND(COALESCE(?url_, "<EMPTY_PLACEHOLDER>") as ?url)
+            BIND(COALESCE(?pdf_url_, "<EMPTY_PLACEHOLDER>") as ?pdf_url)
+            BIND(COALESCE(?license_, "<EMPTY_PLACEHOLDER>") as ?license)
+        }
+
+        # Count number of matching authors
+        {
+            SELECT ?paper ?author_overlap
+            WHERE {
+                {
+                    SELECT ?paper (COUNT(DISTINCT ?author) AS ?matching_authors)
+                    WHERE {
+                        ?paper dct:creator ?author .
+                        {
+                            ?author foaf:name ?name .
+                        }
+                        UNION
+                        {
+                            ?author soa:alternativeName ?name .
+                        }
+                        FILTER (?name IN (<AUTHOR_LIST>))
+                    }
+                    GROUP BY ?paper
+                    ORDER BY DESC(?matching_authors)
+                    LIMIT 500 # having too many results in the subquery will make query time out
+                }
+
+                ?paper dct:date ?date .
+
+                BIND (xsd:float(?matching_authors) / xsd:float(<NUM_AUTHORS>) as ?author_overlap)
+                FILTER (?author_overlap >= <AUTHOR_OVERLAP_THRESHOLD>)
+                FILTER (?date > "<DATE_EARLIEST>"^^xsd:dateTime)
+                FILTER (?date < "<DATE_LATEST>"^^xsd:dateTime)
+            }
+        }
+    }
+
+    GROUP BY ?paper ?location ?url ?pdf_url ?license
+    HAVING (COUNT(?author) > 1)
+}
+
+GROUP BY ?paper ?authors ?author_names ?author_overlap ?title ?abstract ?date ?doi

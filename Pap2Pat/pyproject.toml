@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pap2pat"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "pap2pat"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.4.0"
+transformers = "^4.44.1"
+hydralette = "^0.2.3"
+bert-score = "^0.3.13"
+editdistance = "^0.8.1"
+mpire = {extras = ["dill"], version = "^2.10.2"}
+pyrootutils = "^1.0.4"
+rouge-metric = "^1.0.1"
+sacrebleu = "^2.4.3"
+pandas = "^2.2.2"
+tqdm = "^4.66.5"
+numba = "^0.60.0"
+dill = "^0.3.8"
+nltk = "^3.9.1"
+debugpy = "^1.8.9"
+scale-score = "^0.1.0"
+stylo-metrix = "^0.1.9.1"
+pysbd = "^0.3.4"
+bm25s = "^0.2.5"
+disco-score = {git = "https://github.com/AIPHES/DiscoScore.git"}
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
