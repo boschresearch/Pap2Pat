@@ -22,7 +22,7 @@ def load_samples(run_dir: Path, split: str):
         yield (sample_dir.name, gen, ref)
 
 
-def bert_encode_sliding_window(bert, input, am, max_len=512, window_size=256):
+def bert_encode_sliding_window(bert, input, attention_mask, max_len=512, window_size=256):
     """
     Adds sliding window bert encoding to handle long documents
     """
@@ -37,7 +37,7 @@ def bert_encode_sliding_window(bert, input, am, max_len=512, window_size=256):
                 idx = window_size
 
             start = i - max_len
-            out = bert(input_ids = input[:, start:i], token_type_ids = None, attention_mask = am[:, start:i])
+            out = bert(input_ids = input[:, start:i], token_type_ids = None, attention_mask = attention_mask[:, start:i])
             hidden_states.append(out.last_hidden_state[:, idx:, :])
 
         out = torch.cat(hidden_states, dim=1)
